@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import org.hrytsiuk.deviantart.deviantartkotlin.base.mvp.BaseView
 
 @SuppressLint("Registered")
-class BaseActivity : AppCompatActivity(), BaseView {
+ open class BaseActivity : AppCompatActivity(), BaseView {
     override fun showProgress(visible: Boolean) {
         //--
     }

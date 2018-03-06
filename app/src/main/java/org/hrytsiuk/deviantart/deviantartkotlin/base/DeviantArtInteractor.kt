@@ -12,19 +12,21 @@ abstract class DeviantArtInteractor : BaseInteractor {
         const val CLIENT_ID = 7231
     }
 
+    private val api: RestApi = RestApi()
+
     override fun getRestApi(): RestApi {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return api
     }
 
     override fun getClientId(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return CLIENT_ID
     }
 
     override fun getClientSecret(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return CLIENT_SECRET
     }
 
     override fun getTokenType(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return TOKEN_TYPE
     }
 }
